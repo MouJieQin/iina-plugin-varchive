@@ -1,0 +1,28 @@
+{
+  "name": "Varchive",
+  "identifier": "com.varchive.iina-plugin",
+  "version": "1.0.0",
+  "description": "An IINA plugin to archive your video",
+  "author": {
+    "name": "qinmoujie",
+    "email": "developers@iina.io",
+    "url": "https://iina.io"
+  },
+  "entry": "dist/index.js",
+  "global": "dist/global.js",
+  "permissions": [
+    "show-osd",
+    "file-system",
+    "network-request",
+    "video-overlay"
+  ],
+  "allowedDomains": [
+    "localhost",
+    "127.0.0.1"
+  ],
+  "sidebarTab": {
+    "name": "Varchive"
+  },
+  "preferencesPage": "pref.html",
+  "preferenceDefaults": {}
+}
