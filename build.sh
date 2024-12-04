@@ -2,7 +2,7 @@
 
 rm -rf .parcel-cache dist && parcel build .
 # cp ui/sidebar/video.html dist/ui/sidebar/video.html
-ps -ef | grep -i iina | grep -v grep | awk '{print $2}' | xargs -I {} kill -15 {}
+# ps -ef | grep -i iina | grep -v grep | awk '{print $2}' | xargs -I {} kill -15 {}
 rm -rf "$HOME/Library/Application Support/com.colliderli.iina/plugins/com.varchive.iina-plugin.iinaplugin/*"
 for f in $(ls | grep -v node_modules); do
     cp -r "$f" "$HOME/Library/Application Support/com.colliderli.iina/plugins/com.varchive.iina-plugin.iinaplugin/"
